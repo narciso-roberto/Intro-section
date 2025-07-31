@@ -1,0 +1,237 @@
+body, h1, h2, p, a, ul, ol, li {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font-weight: normal;
+      font-style: normal;
+      text-decoration: none;
+      list-style: none;
+      background: none;
+      color: inherit;
+    }
+
+body {
+      font-family: 'Epilogue', sans-serif;
+      background-color: hsl(0, 0%, 98%);
+
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 50px;
+    
+}
+
+.header ul{
+    display: flex;
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+    gap: 40px;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dropdown ul{
+    display: none;
+    margin-top: 20px;
+    gap: 15px;
+    padding: 20px;
+    flex-direction: column;
+    position: absolute;
+    border-radius: 15px;
+    top: 50%;
+    opacity: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 1px 2px 20px rgba(202, 202, 202, 0.61);
+    align-items: start;
+
+}
+
+.dropdown ul.ativo{
+    display: flex;
+    animation-name: drop;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes drop {
+  from {}
+  to {
+    top: 100%;
+    opacity: 1;
+    }
+}
+
+.list li{
+    display: flex;
+    gap: 10px;
+}
+
+.dropdown .l1::before{
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url('./images/icon-todo.svg');
+    background-repeat: no-repeat;
+
+}
+
+.dropdown .l2::before{
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url('./images/icon-calendar.svg');
+    background-repeat: no-repeat;
+
+}
+
+.dropdown .l3::before{
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 17px;
+    background-image: url('./images/icon-reminders.svg');
+    background-repeat: no-repeat;
+
+}
+
+.dropdown .l4::before{
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url('./images/icon-planning.svg');
+    background-repeat: no-repeat;
+
+}
+
+.buttons .dropdown a::after{
+    content: '';
+    /* background-color: red; */
+    display: inline-block;
+    width: 10px;
+    height: 6px;
+    background-image: url('./images/icon-arrow-down.svg');
+    background-repeat: no-repeat;
+}
+
+.header a{
+    padding: 10px 20px
+}
+
+.login{
+    display: flex;
+    align-items: center;
+}
+
+.login .register{
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 12px;
+}
+
+.login .register:hover{
+    color: #fff;
+    background-color: #000000;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 2fr 1.2fr;
+    max-width: 1550px;
+    margin: 0px auto;
+    align-items: end;
+    justify-items: start;
+    padding: 0px 50px;
+    
+}
+
+.text{
+    display: grid;
+    justify-content: center;
+    justify-items: start;
+    gap: 50px;
+}
+
+.infos{
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+
+
+.text h1{
+    max-width: 650px;
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+.text button{
+    border: 1px solid black;
+    padding: 15px 25px;
+    border-radius: 15px;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.text button:hover{
+    color: #fff;
+    background-color: #000000;
+}
+
+.text p {
+    font-size: 18px;
+    color: hsl(0, 0%, 41%);
+    line-height: 1.5;
+    max-width: 450px;
+}
+
+.sponsors{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
