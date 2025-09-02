@@ -78,7 +78,15 @@
           
 
         <div>
-          <img src="./images/image-hero-desktop.png" alt="">
+          <!-- <img src="./images/image-hero-desktop.png" alt=""
+          srcset="./images/image-hero-mobile.png  750w"
+          sizes="(width <= 700px) 700px"   
+          > -->
+          <img
+  srcset="./images/image-hero-mobile.png 750w, ./images/image-hero-desktop.png 960w"
+  sizes="(max-width: 700px) 100vw, 960px"
+  src="./images/image-hero-desktop.png"
+  alt="Elva dressed as a fairy" />
         </div>
       </div>
     </main>
